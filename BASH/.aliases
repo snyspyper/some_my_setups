@@ -1,0 +1,31 @@
+function _cld {
+    cd $1
+    ls $2
+}
+alias cdl=_cld
+
+alias ::s="shutdown now"
+alias ::r="shutdown -r now"
+
+# Apt
+alias I="sudo apt install -y"
+alias R="sudo apt purge -y"
+alias S="apt search"
+alias A="sudo apt autoremove -y"
+alias U="sudo apt update; sudo apt full-upgrade -y"
+
+# Setups
+alias csh="vim ~/.bashrc; source ~/.bashrc"
+alias ctm="vim ~/.tmux.conf; tmux source ~/.tmux.conf"
+alias cvi="vim ~/.vimrc"
+alias cxr="vim ~/.Xresources; xrdb ~/.Xresources"
+alias ci3="vim ~/.config/i3/config"
+alias caw="vim ~/.config/awesome/rc.lua"
+alias cpo="vim ~/.config/polybar/config.conf; killall polybar; polybar -c ~/.config/polybar/config.conf top &"
+alias чмо="chmod 754"
+
+# Some setups
+
+alias e="vim"
+alias es="vim -S"
+alias esp="vim -S .pc.session"

@@ -185,40 +185,7 @@ export PATH=$PATH:"/home/marina/.cargo/bin":"/home/linuxbrew/.linuxbrew/bin"
 export ARCH=x86_64
 
 # Variables
-Dpolygon="/home/marina/Documents/git/polygon"
-Darchive="/home/marina/Documents/ARCHIVE"
-Dminesaves="/home/marina/.minecraft/saves"
-Dbash="/home/marina/Documents/git/BASH"
-Dpascal="/home/marina/Documents/pascal_swamp"
-Dgit="/home/marina/Documents/git"
-Dlibrary="/home/marina/Documents/ARCHIVE/LIBRARY"
-Dtlauncher="/home/marina/Games/TLauncher"
-Dblender="/home/marina/Documents/Blender"
-Dminetest="/home/marina/.var/app/net.minetest.Minetest/.minetest"
+source .variables
 
 # Aliases
-alias ::s="shutdown now"
-alias ::r="shutdown -r now"
-
-# Apt
-alias I="sudo apt install -y"
-alias R="sudo apt purge -y"
-alias S="apt search"
-alias A="sudo apt autoremove -y"
-alias U="sudo apt update; sudo apt full-upgrade -y"
-
-# Setups
-alias csh="vim ~/.bashrc; source ~/.bashrc"
-alias ctm="vim ~/.tmux.conf; tmux source ~/.tmux.conf"
-alias cvi="vim ~/.vimrc"
-alias cxr="vim ~/.Xresources; xrdb ~/.Xresources"
-alias ci3="vim ~/.config/i3/config"
-alias caw="vim ~/.config/awesome/rc.lua"
-alias cpo="vim ~/.config/polybar/config.conf; killall polybar; polybar -c ~/.config/polybar/config.conf top &"
-alias чмо="chmod 754"
-
-# Some setups
-
-alias e="vim"
-alias es="vim -S"
-alias esp="vim -S .pc.session"
+source .aliases
